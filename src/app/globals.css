@@ -26,8 +26,28 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+@media (prefers-color-scheme: dark) {
+  .bg-image {
+    background-image: url('/landingpage/dark_landingpage.jpg');
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .bg-image {
+    background-image: url('/landingpage/light_landingpage.jpg');
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.signin-text {
+  color: rgb(166, 254, 166);
+}
+
+.contactus-text {
+  color: rgb(216, 166, 254);
 }
